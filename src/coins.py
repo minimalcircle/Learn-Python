@@ -10,7 +10,7 @@ i = 0
 amount = input("Enter an amount to pay: ") * 100
 
 # Calculation
-while amount > 0:
+while amount >= 0.01:
     coins_result_list.append(amount // coins_options_list[i])
     amount -= coins_options_list[i] * coins_result_list[i]
     i += 1
